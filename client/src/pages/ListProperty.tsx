@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useRouter } from "wouter";
+import { useLocation } from "wouter";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -63,7 +63,7 @@ const formSchema = insertPropertySchema.extend({
 type FormValues = z.infer<typeof formSchema>;
 
 const ListProperty = () => {
-  const [, navigate] = useRouter();
+  const [, navigate] = useLocation();
   const { toast } = useToast();
   const { isConnected, connecting, connect } = useWallet();
   const [walletModalOpen, setWalletModalOpen] = useState(false);

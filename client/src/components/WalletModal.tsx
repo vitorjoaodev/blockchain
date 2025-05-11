@@ -10,6 +10,8 @@ import {
 import { Button } from "@/components/ui/button";
 import { useWallet } from "@/contexts/WalletContext";
 import { X } from "lucide-react";
+import MetaMaskLogo from "@assets/apple-touch-icon.png";
+import CoinbaseLogo from "@assets/images (3).png";
 
 type WalletModalProps = {
   open: boolean;
@@ -48,17 +50,8 @@ const WalletModal = ({ open, onClose }: WalletModalProps) => {
             className="w-full flex items-center justify-between p-6 hover:bg-muted"
           >
             <div className="flex items-center">
-              <div className="w-10 h-10 rounded-full bg-[#F6851B] metamask-glow flex items-center justify-center mr-3">
-                <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M21.4791 2L13.0703 8.28003L14.5195 4.50922L21.4791 2Z" fill="white"/>
-                  <path d="M2.52148 2L10.8555 8.35238L9.48047 4.50921L2.52148 2Z" fill="white"/>
-                  <path d="M18.5508 16.4906L16.3594 19.8619L21.0234 21.1478L22.3594 16.5725L18.5508 16.4906Z" fill="white"/>
-                  <path d="M1.64844 16.5725L2.97656 21.1478L7.64062 19.8619L5.45312 16.4906L1.64844 16.5725Z" fill="white"/>
-                  <path d="M7.40625 10.6175L6.17188 12.6706L10.793 12.8932L10.6367 7.87695L7.40625 10.6175Z" fill="white"/>
-                  <path d="M16.5937 10.6175L13.3047 7.80457L13.207 12.8932L17.8281 12.6706L16.5937 10.6175Z" fill="white"/>
-                  <path d="M7.64062 19.8619L10.5156 18.4942L8.03125 16.6134L7.64062 19.8619Z" fill="white"/>
-                  <path d="M13.4844 18.4942L16.3594 19.8619L15.9687 16.6134L13.4844 18.4942Z" fill="white"/>
-                </svg>
+              <div className="w-10 h-10 rounded-full overflow-hidden mr-3">
+                <img src={MetaMaskLogo} alt="MetaMask" className="w-full h-full object-cover" />
               </div>
               <span className="font-medium">MetaMask</span>
             </div>
@@ -74,10 +67,8 @@ const WalletModal = ({ open, onClose }: WalletModalProps) => {
             className="w-full flex items-center justify-between p-6 hover:bg-muted"
           >
             <div className="flex items-center">
-              <div className="w-10 h-10 rounded-full bg-[#3B99FC] flex items-center justify-center mr-3">
-                <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
-                </svg>
+              <div className="w-10 h-10 rounded-full overflow-hidden bg-[#0052FF] mr-3">
+                <img src={CoinbaseLogo} alt="Coinbase" className="w-full h-full object-cover" />
               </div>
               <span className="font-medium">Coinbase Wallet</span>
             </div>
