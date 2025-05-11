@@ -176,20 +176,20 @@ const MyRentals = () => {
                   ) : (
                     <Tabs defaultValue="active">
                       <TabsList className="mb-8">
-                        <TabsTrigger value="active">Aluguéis Ativos ({activeRentals?.length || 0})</TabsTrigger>
-                        <TabsTrigger value="past">Aluguéis Passados ({pastRentals?.length || 0})</TabsTrigger>
+                        <TabsTrigger value="active">Active Rentals ({activeRentals?.length || 0})</TabsTrigger>
+                        <TabsTrigger value="past">Past Rentals ({pastRentals?.length || 0})</TabsTrigger>
                       </TabsList>
                       
                       <TabsContent value="active" className="space-y-6">
                         {activeRentals?.length === 0 ? (
                           <div className="bg-white rounded-lg shadow-sm border border-border p-8 text-center">
                             <CalendarIcon className="w-16 h-16 text-primary mx-auto mb-4" />
-                            <h2 className="text-2xl font-semibold mb-4">Nenhum aluguel ativo no momento</h2>
+                            <h2 className="text-2xl font-semibold mb-4">No active rentals at the moment</h2>
                             <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
-                              Você não tem aluguéis ativos ou pendentes. Que tal explorar propriedades disponíveis?
+                              You don't have any active or pending rentals. Why not explore available properties?
                             </p>
                             <Link href="/properties">
-                              <Button size="lg">Explorar Propriedades</Button>
+                              <Button size="lg">Explore Properties</Button>
                             </Link>
                           </div>
                         ) : (
@@ -222,17 +222,17 @@ const MyRentals = () => {
                                     />
                                     <div className="space-y-3 flex-1">
                                       <div>
-                                        <h4 className="font-medium text-sm text-muted-foreground">Período de Aluguel</h4>
+                                        <h4 className="font-medium text-sm text-muted-foreground">Rental Period</h4>
                                         <p className="font-medium">
                                           {formatDate(rental.startDate)} - {formatDate(rental.endDate)}
                                         </p>
                                       </div>
                                       <div>
-                                        <h4 className="font-medium text-sm text-muted-foreground">Valor Total</h4>
+                                        <h4 className="font-medium text-sm text-muted-foreground">Total Price</h4>
                                         <p className="font-semibold text-lg">${rental.totalPrice.toFixed(2)}</p>
                                       </div>
                                       <div>
-                                        <h4 className="font-medium text-sm text-muted-foreground">Depósito de Segurança</h4>
+                                        <h4 className="font-medium text-sm text-muted-foreground">Security Deposit</h4>
                                         <p className="font-medium">${rental.securityDeposit.toFixed(2)}</p>
                                       </div>
                                     </div>
@@ -240,10 +240,10 @@ const MyRentals = () => {
                                 </CardContent>
                                 <CardFooter className="flex justify-between">
                                   <p className="text-sm text-muted-foreground">
-                                    ID do Contrato: {rental.id}
+                                    Contract ID: {rental.id}
                                   </p>
                                   <Link href={`/properties/${property?.id}`}>
-                                    <Button variant="outline">Ver Detalhes</Button>
+                                    <Button variant="outline">View Details</Button>
                                   </Link>
                                 </CardFooter>
                               </Card>
@@ -256,12 +256,12 @@ const MyRentals = () => {
                         {pastRentals?.length === 0 ? (
                           <div className="bg-white rounded-lg shadow-sm border border-border p-8 text-center">
                             <CalendarIcon className="w-16 h-16 text-primary mx-auto mb-4" />
-                            <h2 className="text-2xl font-semibold mb-4">Nenhum aluguel no histórico</h2>
+                            <h2 className="text-2xl font-semibold mb-4">No rentals in history</h2>
                             <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
-                              Você ainda não tem aluguéis concluídos ou cancelados no histórico.
+                              You don't have any completed or canceled rentals in your history yet.
                             </p>
                             <Link href="/properties">
-                              <Button size="lg">Explorar Propriedades</Button>
+                              <Button size="lg">Explore Properties</Button>
                             </Link>
                           </div>
                         ) : (
@@ -294,17 +294,17 @@ const MyRentals = () => {
                                     />
                                     <div className="space-y-3 flex-1">
                                       <div>
-                                        <h4 className="font-medium text-sm text-muted-foreground">Período de Aluguel</h4>
+                                        <h4 className="font-medium text-sm text-muted-foreground">Rental Period</h4>
                                         <p className="font-medium">
                                           {formatDate(rental.startDate)} - {formatDate(rental.endDate)}
                                         </p>
                                       </div>
                                       <div>
-                                        <h4 className="font-medium text-sm text-muted-foreground">Valor Total</h4>
+                                        <h4 className="font-medium text-sm text-muted-foreground">Total Price</h4>
                                         <p className="font-semibold text-lg">${rental.totalPrice.toFixed(2)}</p>
                                       </div>
                                       <div>
-                                        <h4 className="font-medium text-sm text-muted-foreground">Depósito Devolvido</h4>
+                                        <h4 className="font-medium text-sm text-muted-foreground">Returned Deposit</h4>
                                         <p className="font-medium">${rental.securityDeposit.toFixed(2)}</p>
                                       </div>
                                     </div>
@@ -312,10 +312,10 @@ const MyRentals = () => {
                                 </CardContent>
                                 <CardFooter className="flex justify-between">
                                   <p className="text-sm text-muted-foreground">
-                                    Finalizado em: {rental.status === "completed" ? formatDate(rental.endDate) : "Cancelado"}
+                                    Completed on: {rental.status === "completed" ? formatDate(rental.endDate) : "Canceled"}
                                   </p>
                                   <Link href={`/properties/${property?.id}`}>
-                                    <Button variant="outline">Ver Propriedade</Button>
+                                    <Button variant="outline">View Property</Button>
                                   </Link>
                                 </CardFooter>
                               </Card>
