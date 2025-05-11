@@ -48,7 +48,7 @@ const BrowseRentals = () => {
   };
 
   // Get max price for the slider
-  const maxPrice = properties ? Math.max(...properties.map(p => p.pricePerDay)) : 1000;
+  const maxPrice = properties ? Math.max(...properties.map(p => p.price)) : 1000;
 
   return (
     <div className="bg-background min-h-screen">

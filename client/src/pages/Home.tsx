@@ -297,7 +297,11 @@ const Home = () => {
             {/* Smart Contract Illustration */}
             <div className="order-2 lg:order-1">
               <div className="bg-white rounded-xl shadow-md p-6 relative overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" alt="Smart contract visualization" className="w-full h-auto rounded-lg" />
+                {/* Esta é a imagem que você pode trocar no código, por exemplo:
+                   - Você pode mudar o link abaixo para qualquer imagem que preferir
+                   - Ou pode adicionar uma imagem em 'attached_assets/' e usar @assets/nome-da-imagem.jpg
+                */}
+                <img src="https://images.unsplash.com/photo-1639762681057-408e52192e55?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" alt="Smart contract visualization" className="w-full h-auto rounded-lg" />
                 
                 <div className="mt-6 p-4 bg-background rounded-lg border border-border">
                   <h4 className="font-semibold mb-2 font-poppins">Example Smart Contract</h4>

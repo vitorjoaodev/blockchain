@@ -49,14 +49,17 @@ const Header = () => {
             <Link href="/" className={`${location === '/' ? 'text-primary' : 'text-foreground'} hover:text-primary font-medium`}>
               Home
             </Link>
-            <Link href="/#rentals" className="text-foreground hover:text-primary font-medium">
-              Rentals
+            <Link href="/properties" className={`${location === '/properties' ? 'text-primary' : 'text-foreground'} hover:text-primary font-medium`}>
+              Propriedades
             </Link>
             <Link href="/list-property" className={`${location === '/list-property' ? 'text-primary' : 'text-foreground'} hover:text-primary font-medium`}>
-              List Property
+              Anunciar
             </Link>
-            <Link href="/#how-it-works" className="text-foreground hover:text-primary font-medium">
-              How It Works
+            <Link href="/how-it-works" className={`${location === '/how-it-works' ? 'text-primary' : 'text-foreground'} hover:text-primary font-medium`}>
+              Como Funciona
+            </Link>
+            <Link href="/my-rentals" className={`${location === '/my-rentals' ? 'text-primary' : 'text-foreground'} hover:text-primary font-medium`}>
+              Meus Aluguéis
             </Link>
           </nav>
         </div>
@@ -123,14 +126,17 @@ const Header = () => {
             <Link href="/" className="block px-3 py-2 rounded-md text-base font-medium text-foreground hover:bg-muted">
               Home
             </Link>
-            <Link href="/#rentals" className="block px-3 py-2 rounded-md text-base font-medium text-foreground hover:bg-muted">
-              Rentals
+            <Link href="/properties" className="block px-3 py-2 rounded-md text-base font-medium text-foreground hover:bg-muted">
+              Propriedades
             </Link>
             <Link href="/list-property" className="block px-3 py-2 rounded-md text-base font-medium text-foreground hover:bg-muted">
-              List Property
+              Anunciar
             </Link>
-            <Link href="/#how-it-works" className="block px-3 py-2 rounded-md text-base font-medium text-foreground hover:bg-muted">
-              How It Works
+            <Link href="/how-it-works" className="block px-3 py-2 rounded-md text-base font-medium text-foreground hover:bg-muted">
+              Como Funciona
+            </Link>
+            <Link href="/my-rentals" className="block px-3 py-2 rounded-md text-base font-medium text-foreground hover:bg-muted">
+              Meus Aluguéis
             </Link>
             {!isConnected && (
               <Button 
