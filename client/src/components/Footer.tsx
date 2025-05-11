@@ -72,7 +72,12 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-white/70 text-sm mb-4 md:mb-0">© 2023 RentChain. All rights reserved.</p>
+          <p className="text-white/70 text-sm mb-4 md:mb-0">
+            © 2023 RentChain. All rights reserved. Developed by João Vitor Belasque | 
+            <a href="https://www.linkedin.com/in/joaovitorfullstack/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+              LinkedIn
+            </a>
+          </p>
           <div className="flex space-x-6">
             <a href="#" className="text-white/70 hover:text-primary text-sm">Terms of Service</a>
             <a href="#" className="text-white/70 hover:text-primary text-sm">Privacy Policy</a>

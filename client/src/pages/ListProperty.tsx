@@ -380,12 +380,12 @@ const ListProperty = () => {
                   )}
                 />
                 
-                {field.value && (
+                {form.getValues("imageUrl") && (
                   <div className="mt-4">
                     <p className="text-sm text-muted-foreground mb-2">Preview:</p>
                     <div className="relative h-40 bg-muted rounded-md overflow-hidden">
                       <img
-                        src={field.value}
+                        src={form.getValues("imageUrl")}
                         alt="Property preview"
                         className="w-full h-full object-cover"
                         onError={(e) => {

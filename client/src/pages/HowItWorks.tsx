@@ -8,15 +8,15 @@ const HowItWorks = () => {
       {/* Hero Section */}
       <section className="bg-primary/10 py-16">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold font-poppins mb-6">Como Funciona o RentChain</h1>
+          <h1 className="text-4xl md:text-5xl font-bold font-poppins mb-6">How RentChain Works</h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-            Uma plataforma de aluguel descentralizada que utiliza tecnologia blockchain para tornar aluguéis seguros, transparentes e eficientes.
+            A decentralized rental platform that uses blockchain technology to make rentals secure, transparent, and efficient.
           </p>
           <Link href="/list-property">
-            <Button size="lg" className="mr-4">Listar Propriedade</Button>
+            <Button size="lg" className="mr-4">List Property</Button>
           </Link>
           <Link href="/properties">
-            <Button variant="outline" size="lg">Explorar Propriedades</Button>
+            <Button variant="outline" size="lg">Explore Properties</Button>
           </Link>
         </div>
       </section>
@@ -24,7 +24,7 @@ const HowItWorks = () => {
       {/* Process Steps Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-16">O Processo em 4 Passos Simples</h2>
+          <h2 className="text-3xl font-bold text-center mb-16">The Process in 4 Simple Steps</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Step 1 */}
@@ -32,9 +32,9 @@ const HowItWorks = () => {
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Shield className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-3">1. Conecte sua Carteira</h3>
+              <h3 className="text-xl font-semibold mb-3">1. Connect Your Wallet</h3>
               <p className="text-muted-foreground">
-                Conecte sua carteira digital para acessar todas as funcionalidades da plataforma de forma segura e descentralizada.
+                Connect your digital wallet to access all platform features securely and in a decentralized manner.
               </p>
             </div>
             
@@ -43,9 +43,9 @@ const HowItWorks = () => {
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Lock className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-3">2. Escolha uma Propriedade</h3>
+              <h3 className="text-xl font-semibold mb-3">2. Choose a Property</h3>
               <p className="text-muted-foreground">
-                Navegue por nossas categorias: Carros, Drones, Imóveis ou Equipamentos e encontre o que você precisa.
+                Browse through our categories: Cars, Drones, Real Estate, or Equipment and find what you need.
               </p>
             </div>
             
@@ -54,9 +54,9 @@ const HowItWorks = () => {
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Check className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-3">3. Assine o Contrato</h3>
+              <h3 className="text-xl font-semibold mb-3">3. Sign the Contract</h3>
               <p className="text-muted-foreground">
-                Assine um contrato inteligente que gerencia automaticamente o aluguel, o depósito e as condições do acordo.
+                Sign a smart contract that automatically manages the rental, deposit, and agreement terms.
               </p>
             </div>
             
@@ -65,9 +65,9 @@ const HowItWorks = () => {
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <RefreshCw className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-3">4. Desfrute e Devolva</h3>
+              <h3 className="text-xl font-semibold mb-3">4. Enjoy and Return</h3>
               <p className="text-muted-foreground">
-                Após usar o item, devolva nas condições acordadas para receber seu depósito de volta automaticamente.
+                After using the item, return it in the agreed conditions to automatically receive your deposit back.
               </p>
             </div>
           </div>

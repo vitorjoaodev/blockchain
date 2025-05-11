@@ -50,16 +50,16 @@ const Header = () => {
               Home
             </Link>
             <Link href="/properties" className={`${location === '/properties' ? 'text-primary' : 'text-foreground'} hover:text-primary font-medium`}>
-              Propriedades
+              Properties
             </Link>
             <Link href="/list-property" className={`${location === '/list-property' ? 'text-primary' : 'text-foreground'} hover:text-primary font-medium`}>
-              Anunciar
+              List Property
             </Link>
             <Link href="/how-it-works" className={`${location === '/how-it-works' ? 'text-primary' : 'text-foreground'} hover:text-primary font-medium`}>
-              Como Funciona
+              How It Works
             </Link>
             <Link href="/my-rentals" className={`${location === '/my-rentals' ? 'text-primary' : 'text-foreground'} hover:text-primary font-medium`}>
-              Meus Aluguéis
+              My Rentals
             </Link>
           </nav>
         </div>
@@ -127,16 +127,16 @@ const Header = () => {
               Home
             </Link>
             <Link href="/properties" className="block px-3 py-2 rounded-md text-base font-medium text-foreground hover:bg-muted">
-              Propriedades
+              Properties
             </Link>
             <Link href="/list-property" className="block px-3 py-2 rounded-md text-base font-medium text-foreground hover:bg-muted">
-              Anunciar
+              List Property
             </Link>
             <Link href="/how-it-works" className="block px-3 py-2 rounded-md text-base font-medium text-foreground hover:bg-muted">
-              Como Funciona
+              How It Works
             </Link>
             <Link href="/my-rentals" className="block px-3 py-2 rounded-md text-base font-medium text-foreground hover:bg-muted">
-              Meus Aluguéis
+              My Rentals
             </Link>
             {!isConnected && (
               <Button 
