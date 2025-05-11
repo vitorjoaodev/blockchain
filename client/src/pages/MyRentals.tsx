@@ -114,9 +114,9 @@ const MyRentals = () => {
       {/* Hero Section */}
       <section className="bg-primary/10 py-16">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold font-poppins mb-6">Meus Aluguéis</h1>
+          <h1 className="text-4xl font-bold font-poppins mb-6">My Rentals</h1>
           <p className="text-xl text-muted-foreground max-w-3xl mb-6">
-            Gerencie todos os seus aluguéis ativos e passados em um só lugar.
+            Manage all your active and past rentals in one place.
           </p>
         </div>
       </section>
@@ -126,12 +126,12 @@ const MyRentals = () => {
           {!isConnected ? (
             <div className="bg-white rounded-lg shadow-sm border border-border p-8 text-center">
               <AlertCircle className="w-16 h-16 text-primary mx-auto mb-4" />
-              <h2 className="text-2xl font-semibold mb-4">Conecte sua carteira para ver seus aluguéis</h2>
+              <h2 className="text-2xl font-semibold mb-4">Connect your wallet to view your rentals</h2>
               <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
-                Para acessar seus aluguéis e gerenciar suas propriedades, você precisa conectar sua carteira digital.
+                To access your rentals and manage your properties, you need to connect your digital wallet.
               </p>
               <Button size="lg" onClick={handleConnect}>
-                Conectar Carteira
+                Connect Wallet
               </Button>
             </div>
           ) : (
@@ -165,12 +165,12 @@ const MyRentals = () => {
                   {(!rentals || rentals.length === 0) ? (
                     <div className="bg-white rounded-lg shadow-sm border border-border p-8 text-center">
                       <HomeIcon className="w-16 h-16 text-primary mx-auto mb-4" />
-                      <h2 className="text-2xl font-semibold mb-4">Você ainda não tem aluguéis</h2>
+                      <h2 className="text-2xl font-semibold mb-4">You don't have any rentals yet</h2>
                       <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
-                        Comece a explorar propriedades disponíveis para encontrar algo para alugar.
+                        Start exploring available properties to find something to rent.
                       </p>
                       <Link href="/properties">
-                        <Button size="lg">Explorar Propriedades</Button>
+                        <Button size="lg">Explore Properties</Button>
                       </Link>
                     </div>
                   ) : (

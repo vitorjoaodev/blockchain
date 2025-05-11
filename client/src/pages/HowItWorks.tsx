@@ -77,68 +77,68 @@ const HowItWorks = () => {
       {/* Benefits Section */}
       <section className="py-16 bg-slate-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-16">Benefícios do RentChain</h2>
+          <h2 className="text-3xl font-bold text-center mb-16">Benefits of RentChain</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             <div className="bg-white p-6 rounded-xl shadow-sm border border-border">
-              <h3 className="text-xl font-semibold mb-4">Segurança Garantida</h3>
+              <h3 className="text-xl font-semibold mb-4">Guaranteed Security</h3>
               <p className="text-muted-foreground mb-4">
-                Contratos inteligentes protegem tanto locadores quanto locatários, garantindo que todas as partes cumpram suas obrigações.
+                Smart contracts protect both landlords and tenants, ensuring all parties fulfill their obligations.
               </p>
               <ul className="space-y-2">
                 <li className="flex items-start">
                   <Check className="w-5 h-5 text-primary mr-2 mt-0.5" />
-                  <span>Depósitos protegidos por contratos</span>
+                  <span>Deposits protected by contracts</span>
                 </li>
                 <li className="flex items-start">
                   <Check className="w-5 h-5 text-primary mr-2 mt-0.5" />
-                  <span>Condições imutáveis e transparentes</span>
+                  <span>Immutable and transparent conditions</span>
                 </li>
                 <li className="flex items-start">
                   <Check className="w-5 h-5 text-primary mr-2 mt-0.5" />
-                  <span>Verificação de identidade</span>
+                  <span>Identity verification</span>
                 </li>
               </ul>
             </div>
             
             <div className="bg-white p-6 rounded-xl shadow-sm border border-border">
-              <h3 className="text-xl font-semibold mb-4">Economia de Custos</h3>
+              <h3 className="text-xl font-semibold mb-4">Cost Savings</h3>
               <p className="text-muted-foreground mb-4">
-                Elimine intermediários e reduza taxas, tornando aluguéis mais acessíveis para todos.
+                Eliminate intermediaries and reduce fees, making rentals more affordable for everyone.
               </p>
               <ul className="space-y-2">
                 <li className="flex items-start">
                   <Check className="w-5 h-5 text-primary mr-2 mt-0.5" />
-                  <span>Sem taxas de intermediários</span>
+                  <span>No intermediary fees</span>
                 </li>
                 <li className="flex items-start">
                   <Check className="w-5 h-5 text-primary mr-2 mt-0.5" />
-                  <span>Transações diretas entre usuários</span>
+                  <span>Direct transactions between users</span>
                 </li>
                 <li className="flex items-start">
                   <Check className="w-5 h-5 text-primary mr-2 mt-0.5" />
-                  <span>Processos automatizados</span>
+                  <span>Automated processes</span>
                 </li>
               </ul>
             </div>
             
             <div className="bg-white p-6 rounded-xl shadow-sm border border-border">
-              <h3 className="text-xl font-semibold mb-4">Conveniência Total</h3>
+              <h3 className="text-xl font-semibold mb-4">Total Convenience</h3>
               <p className="text-muted-foreground mb-4">
-                Processo simplificado de ponta a ponta, desde a listagem até a devolução.
+                Streamlined end-to-end process, from listing to return.
               </p>
               <ul className="space-y-2">
                 <li className="flex items-start">
                   <Check className="w-5 h-5 text-primary mr-2 mt-0.5" />
-                  <span>Interface intuitiva</span>
+                  <span>Intuitive interface</span>
                 </li>
                 <li className="flex items-start">
                   <Check className="w-5 h-5 text-primary mr-2 mt-0.5" />
-                  <span>Gestão de aluguéis em um só lugar</span>
+                  <span>Manage all rentals in one place</span>
                 </li>
                 <li className="flex items-start">
                   <Check className="w-5 h-5 text-primary mr-2 mt-0.5" />
-                  <span>Devolução de depósito automática</span>
+                  <span>Automatic deposit return</span>
                 </li>
               </ul>
             </div>
@@ -149,34 +149,34 @@ const HowItWorks = () => {
       {/* FAQ Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-16">Perguntas Frequentes</h2>
+          <h2 className="text-3xl font-bold text-center mb-16">Frequently Asked Questions</h2>
           
           <div className="max-w-3xl mx-auto space-y-6">
             <div className="bg-white p-6 rounded-xl shadow-sm border border-border">
-              <h3 className="text-xl font-semibold mb-2">O que é um contrato inteligente?</h3>
+              <h3 className="text-xl font-semibold mb-2">What is a smart contract?</h3>
               <p className="text-muted-foreground">
-                Um contrato inteligente é um programa autônomo que executa automaticamente quando condições predeterminadas são atendidas. No RentChain, eles gerenciam todo o processo de aluguel, desde o pagamento até a devolução do depósito.
+                A smart contract is an autonomous program that automatically executes when predetermined conditions are met. In RentChain, they manage the entire rental process, from payment to deposit return.
               </p>
             </div>
             
             <div className="bg-white p-6 rounded-xl shadow-sm border border-border">
-              <h3 className="text-xl font-semibold mb-2">Preciso de conhecimento em blockchain?</h3>
+              <h3 className="text-xl font-semibold mb-2">Do I need blockchain knowledge?</h3>
               <p className="text-muted-foreground">
-                Não! Projetamos o RentChain para ser acessível a todos. Você só precisa de uma carteira digital, e nossa interface guiará você durante todo o processo.
+                No! We designed RentChain to be accessible to everyone. You only need a digital wallet, and our interface will guide you through the entire process.
               </p>
             </div>
             
             <div className="bg-white p-6 rounded-xl shadow-sm border border-border">
-              <h3 className="text-xl font-semibold mb-2">Como são protegidos os depósitos?</h3>
+              <h3 className="text-xl font-semibold mb-2">How are deposits protected?</h3>
               <p className="text-muted-foreground">
-                Os depósitos são mantidos em um contrato inteligente que libera os fundos somente quando as condições acordadas são cumpridas. Isso elimina disputas e garante justiça para ambas as partes.
+                Deposits are held in a smart contract that releases funds only when the agreed conditions are met. This eliminates disputes and ensures fairness for both parties.
               </p>
             </div>
             
             <div className="bg-white p-6 rounded-xl shadow-sm border border-border">
-              <h3 className="text-xl font-semibold mb-2">Posso listar qualquer tipo de propriedade?</h3>
+              <h3 className="text-xl font-semibold mb-2">Can I list any type of property?</h3>
               <p className="text-muted-foreground">
-                Atualmente, o RentChain suporta quatro categorias: carros, drones, imóveis e equipamentos. Se você tem um item que não se encaixa nessas categorias, entre em contato conosco para discutir.
+                Currently, RentChain supports four categories: cars, drones, real estate, and equipment. If you have an item that doesn't fit these categories, contact us to discuss.
               </p>
             </div>
           </div>
@@ -186,16 +186,16 @@ const HowItWorks = () => {
       {/* CTA Section */}
       <section className="py-16 bg-primary">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-white mb-6">Pronto para Começar?</h2>
+          <h2 className="text-3xl font-bold text-white mb-6">Ready to Get Started?</h2>
           <p className="text-xl text-white/80 max-w-2xl mx-auto mb-8">
-            Junte-se a milhares de pessoas que já estão revolucionando a maneira como alugamos e compartilhamos recursos.
+            Join thousands of people who are already revolutionizing the way we rent and share resources.
           </p>
           <Link href="/list-property">
-            <Button variant="secondary" size="lg" className="mr-4">Listar Propriedade</Button>
+            <Button variant="secondary" size="lg" className="mr-4">List Property</Button>
           </Link>
           <Link href="/properties">
             <Button variant="outline" size="lg" className="bg-transparent text-white border-white hover:bg-white hover:text-primary">
-              Explorar Propriedades
+              Explore Properties
             </Button>
           </Link>
         </div>
